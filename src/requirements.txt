@@ -6,6 +6,6 @@ einops
 onnxruntime-gpu
 omegaconf
 peft
-huggingface-hub==1.4.1
+huggingface-hub==0.34.0
 opencv-python
 insightface==0.7.3
