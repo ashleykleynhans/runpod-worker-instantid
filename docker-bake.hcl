@@ -11,11 +11,11 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "1.1.1"
+    default = "1.1.2"
 }
 
 variable "CU_VERSION" {
-    default = "118"
+    default = "124"
 }
 
 variable "CUDA_VERSION" {
