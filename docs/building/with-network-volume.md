@@ -52,10 +52,10 @@ python3 -m venv /workspace/venv
 source /workspace/venv/bin/activate
 
 # Install torch
-pip3 install --no-cache-dir torch==2.0.1 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip3 install --no-cache-dir torch==2.6.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 # Install xformers
-pip3 install --no-cache-dir xformers==0.0.22
+pip3 install --no-cache-dir xformers==0.0.29.post3
 
 # Install RunPod SDK
 pip3 install --no-cache-dir runpod
@@ -80,7 +80,7 @@ You can either build this Docker image yourself, your alternatively,
 you can use my pre-built image:
 
 ```
-ashleykza/runpod-worker-instantid:1.0.11
+ashleykza/runpod-worker-instantid:2.1.0
 ```
 
 If you choose to build it yourself:

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-TORCH_VERSION="2.0.1"
-XFORMERS_VERSION="0.0.22"
+TORCH_VERSION="2.6.0"
+XFORMERS_VERSION="0.0.29.post3"
 
 echo "Deleting InstantID Serverless Worker"
 rm -rf /workspace/runpod-worker-instantid

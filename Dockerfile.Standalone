@@ -1,4 +1,5 @@
-FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
+ARG CUDA_VERSION="12.4.1"
+FROM nvidia/cuda:${CUDA_VERSION}-cudnn8-devel-ubuntu22.04
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONUNBUFFERED=1 \
@@ -42,9 +43,12 @@ WORKDIR /workspace
 RUN git clone https://github.com/ashleykleynhans/runpod-worker-instantid.git
 
 # Install the worker dependencies
+ARG INDEX_URL="https://download.pytorch.org/whl/cu118"
+ARG TORCH_VERSION="2.6.0+cu124"
+ARG XFORMERS_VERSION="0.0.29.post3"
 WORKDIR /workspace/runpod-worker-instantid/src
-RUN pip3 install --no-cache-dir torch==2.0.1 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 && \
-    pip3 install --no-cache-dir xformers==0.0.22 runpod && \
+RUN pip3 install --no-cache-dir torch==${TORCH_VERSION} torchvision torchaudio --index-url ${INDEX_URL} && \
+    pip3 install --no-cache-dir xformers==${XFORMERS_VERSION} runpod && \
     pip3 install -r requirements.txt
 
 # Download the checkpoints
