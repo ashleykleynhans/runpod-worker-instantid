@@ -7,6 +7,7 @@ IMAGE_PATH = '../data/mypic.jpg'
 PROMPT = 'a man'
 NEGATIVE_PROMPT = 'nsfw'
 STYLE = 'Watercolor'
+#STYLE = 'Retro Futurism'
 NUM_STEPS = 30
 IDENTITYNET_STRENGTH_RATIO = 0.8
 ADAPTER_STRENGTH_RATIO = 0.8
@@ -28,8 +29,8 @@ if __name__ == '__main__':
             "adapter_strength_ratio":  ADAPTER_STRENGTH_RATIO,
             "guidance_scale": GUIDANCE_SCALE,
             "seed": SEED,
-            "width": 640,
-            "height": 860
+            # "width": 640,
+            # "height": 860
         }
     }
 
