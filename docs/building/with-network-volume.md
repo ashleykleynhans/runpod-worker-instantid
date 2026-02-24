@@ -57,9 +57,6 @@ pip3 install --no-cache-dir torch==2.6.0 torchvision torchaudio --index-url http
 # Install xformers
 pip3 install --no-cache-dir xformers==0.0.29.post3
 
-# Install RunPod SDK
-pip3 install --no-cache-dir runpod
-
 # Install the requirements for InstantID
 pip3 install -r requirements.txt
 ```
@@ -80,7 +77,7 @@ You can either build this Docker image yourself, your alternatively,
 you can use my pre-built image:
 
 ```
-ghcr.io/ashleykleynhans/runpod-worker-instantid:2.2.0-network-volume
+ghcr.io/ashleykleynhans/runpod-worker-instantid:2.2.2-network-volume
 ```
 
 If you choose to build it yourself:

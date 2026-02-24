@@ -48,7 +48,7 @@ ARG TORCH_VERSION="2.6.0+cu124"
 ARG XFORMERS_VERSION="0.0.29.post3"
 WORKDIR /workspace/runpod-worker-instantid/src
 RUN pip3 install --no-cache-dir torch==${TORCH_VERSION} torchvision torchaudio --index-url ${INDEX_URL} && \
-    pip3 install --no-cache-dir xformers==${XFORMERS_VERSION} runpod && \
+    pip3 install --no-cache-dir xformers==${XFORMERS_VERSION} && \
     pip3 install -r requirements.txt
 
 # Download the checkpoints

@@ -9,3 +9,4 @@ peft
 huggingface-hub==0.34.0
 opencv-python
 insightface==0.7.3
+runpod
