@@ -1,0 +1,15 @@
+[project]
+name = "runpod-worker-instantid"
+version = "0.0.0"
+description = "RunPod Serverless Worker for InstantID"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=src --cov-report=term-missing"

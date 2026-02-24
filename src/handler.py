@@ -348,7 +348,7 @@ def handler(job):
 # ---------------------------------------------------------------------------- #
 # RunPod Handler                                                               #
 # ---------------------------------------------------------------------------- #
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     logger.info('Starting RunPod Serverless...')
     runpod.serverless.start(
         {

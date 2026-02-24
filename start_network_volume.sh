@@ -16,7 +16,7 @@ if [ -f "/workspace/venv/bin/activate" ]; then
     export HUGGINGFACE_HUB_CACHE="/runpod-volume/huggingface-cache/hub"
     export TRANSFORMERS_CACHE="/runpod-volume/huggingface-cache/hub"
     cd /workspace/runpod-worker-instantid/src
-    python3 -u rp_handler.py
+    python3 -u handler.py
 else
     echo "ERROR: The Python Virtual Environment (/workspace/venv/bin/activate) could not be activated"
     echo "1. Ensure that you have followed the instructions at: https://github.com/ashleykleynhans/runpod-worker-instantid/blob/main/docs/building/with-network-volume.md"

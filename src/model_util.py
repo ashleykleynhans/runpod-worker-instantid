@@ -439,19 +439,19 @@ def is_intel_xpu():
     return False
 
 
-try:
+try:  # pragma: no cover
     import intel_extension_for_pytorch as ipex
 
     if torch.xpu.is_available():
         xpu_available = True
-except:
+except:  # pragma: no cover
     pass
 
-try:
+try:  # pragma: no cover
     if torch.backends.mps.is_available():
         cpu_state = CPUState.MPS
         import torch.mps
-except:
+except:  # pragma: no cover
     pass
 
 

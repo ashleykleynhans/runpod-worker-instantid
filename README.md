@@ -22,6 +22,21 @@ Zero-shot Identity-Preserving Generation in Seconds.
 1. [Local Testing](docs/testing/local.md)
 2. [RunPod Testing](docs/testing/runpod.md)
 
+### Unit Tests
+
+Unit tests are provided in the `tests/` directory using pytest.
+
+```bash
+# Install test dependencies
+pip3 install ".[test]"
+
+# Run tests with verbose output and coverage
+pytest -v
+```
+
+Coverage is included by default via the `pyproject.toml` configuration.
+Coverage reports show line-by-line miss details in the terminal output.
+
 ## Building the Docker image that will be used by the Serverless Worker
 
 There are two options:
@@ -65,7 +80,7 @@ was successful.
 
 ## Serverless Handler
 
-The serverless handler (`rp_handler.py`) is a Python script that handles
+The serverless handler (`handler.py`) is a Python script that handles
 the API requests to your Endpoint using the [runpod](https://github.com/runpod/runpod-python)
 Python library.  It defines a function `handler(event)` that takes an
 API request (event), runs the inference using [InstantID](

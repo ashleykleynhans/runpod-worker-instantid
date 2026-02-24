@@ -62,7 +62,7 @@ def get_instantid_pipeline():
     return pipeline
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     fetch_instantid_checkpoints()
     get_instantid_pipeline()
 

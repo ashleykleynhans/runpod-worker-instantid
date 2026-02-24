@@ -44,7 +44,7 @@ from ip_adapter.utils import is_torch2_available
 
 if is_torch2_available():
     from ip_adapter.attention_processor import IPAttnProcessor2_0 as IPAttnProcessor, AttnProcessor2_0 as AttnProcessor
-else:
+else:  # pragma: no cover
     from ip_adapter.attention_processor import IPAttnProcessor, AttnProcessor
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
@@ -559,7 +559,7 @@ class StableDiffusionXLInstantIDPipeline(StableDiffusionXLControlNetPipeline):
 
             image = images
             height, width = image[0].shape[-2:]
-        else:
+        else:  # pragma: no cover
             assert False
 
         # 5. Prepare timesteps
