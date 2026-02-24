@@ -326,6 +326,7 @@ def load_checkpoint_model_xl(
         checkpoint_path,
         torch_dtype=weight_dtype,
         cache_dir=DIFFUSERS_CACHE_DIR,
+        local_files_only=True,
     )
 
     unet = pipe.unet
