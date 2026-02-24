@@ -8,6 +8,9 @@ requires-python = ">=3.10"
 test = [
     "pytest",
     "pytest-cov",
+    "numpy",
+    "Pillow",
+    "requests",
 ]
 
 [tool.pytest.ini_options]
