@@ -16,10 +16,9 @@ RUN apt update && \
     add-apt-repository ppa:deadsnakes/ppa && \
     apt update && \
     apt install -y \
-      python3.11 \
-      python3.11-dev \
-      python3.11-venv \
-      python3.11-distutils \
+      python3.12 \
+      python3.12-dev \
+      python3.12-venv \
       fonts-dejavu-core \
       rsync \
       git \
@@ -38,12 +37,12 @@ RUN apt update && \
       libgoogle-perftools4 \
       libtcmalloc-minimal4 \
       procps && \
-    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1 && \
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1 && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean -y
 
-# Install pip for Python 3.11
+# Install pip for Python 3.12
 RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3
 
 # Set the working directory
@@ -52,7 +51,7 @@ WORKDIR /workspace
 RUN git clone https://github.com/ashleykleynhans/runpod-worker-instantid.git
 
 # Install the worker dependencies
-ARG INDEX_URL="https://download.pytorch.org/whl/cu118"
+ARG INDEX_URL="https://download.pytorch.org/whl/cu124"
 ARG TORCH_VERSION="2.6.0+cu124"
 ARG XFORMERS_VERSION="0.0.29.post3"
 WORKDIR /workspace/runpod-worker-instantid/src

@@ -28,7 +28,7 @@ python3 -m venv /workspace/venv
 source /workspace/venv/bin/activate
 
 echo "Installing Torch"
-pip3 install --no-cache-dir torch==${TORCH_VERSION} torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip3 install --no-cache-dir torch==${TORCH_VERSION}+cu124 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 
 echo "Installing xformers"
 pip3 install --no-cache-dir xformers==${XFORMERS_VERSION}
