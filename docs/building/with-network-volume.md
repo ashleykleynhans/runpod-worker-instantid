@@ -77,7 +77,7 @@ You can either build this Docker image yourself, your alternatively,
 you can use my pre-built image:
 
 ```
-ghcr.io/ashleykleynhans/runpod-worker-instantid:2.2.3-network-volume
+ghcr.io/ashleykleynhans/runpod-worker-instantid:2.3.0-network-volume
 ```
 
 If you choose to build it yourself:
