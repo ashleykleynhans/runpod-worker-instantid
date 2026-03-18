@@ -1,12 +1,13 @@
-diffusers==0.26.1
-transformers==4.37.2
+diffusers==0.31.0
+transformers==4.53.0
 accelerate
 safetensors
 einops
-onnxruntime-gpu
+onnxruntime-gpu; sys_platform != 'darwin'
+onnxruntime; sys_platform == 'darwin'
 omegaconf
 peft
-huggingface-hub<0.25
+huggingface-hub>=0.30.0,<1.0
 opencv-python
 insightface==0.7.3
 runpod
