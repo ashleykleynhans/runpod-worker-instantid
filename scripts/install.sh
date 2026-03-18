@@ -27,6 +27,9 @@ cd /workspace/runpod-worker-instantid
 python3 -m venv /workspace/venv
 source /workspace/venv/bin/activate
 
+echo "Upgrading pip"
+pip3 install --upgrade pip
+
 echo "Installing Torch"
 pip3 install --no-cache-dir torch==${TORCH_VERSION}+cu124 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 
