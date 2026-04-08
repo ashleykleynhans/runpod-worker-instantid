@@ -5,6 +5,8 @@ updates:
     schedule:
       interval: "weekly"
     ignore:
+      # Torch is pinned to match CUDA 12.4 and xformers compatibility
+      - dependency-name: "torch"
       # Avoid major version bumps that break backward compatibility
       - dependency-name: "diffusers"
         update-types: ["version-update:semver-major"]
