@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/src"
+    schedule:
+      interval: "weekly"
+    ignore:
+      # Ignore all pre-release/RC versions
+      - dependency-name: "*"
+        update-types: ["version-update:semver-pre-release"]
+      # Avoid major version bumps that break backward compatibility
+      - dependency-name: "diffusers"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "transformers"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "accelerate"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "peft"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "insightface"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "huggingface-hub"
+        update-types: ["version-update:semver-major"]

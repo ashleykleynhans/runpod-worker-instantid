@@ -1,12 +1,12 @@
-diffusers==0.31.0
-transformers==4.53.0
-accelerate
+diffusers>=0.31.0,<1.0
+transformers>=4.53.0,<5.0
+accelerate>=0.34.0,<1.0
 safetensors
 einops
 onnxruntime-gpu; sys_platform != 'darwin'
 onnxruntime; sys_platform == 'darwin'
 omegaconf
-peft
+peft>=0.13.0,<1.0
 huggingface-hub>=0.30.0,<1.0
 opencv-python
 insightface==0.7.3
