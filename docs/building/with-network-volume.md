@@ -85,7 +85,7 @@ git pull
 2. Upgrade the dependencies:
 ```bash
 cd src
-pip3 install --upgrade --upgrade-strategy eager -r requirements.txt
+pip3 install --upgrade --upgrade-strategy eager -c constraints.txt -r requirements.txt
 ```
 
 ## Building the Docker Image
