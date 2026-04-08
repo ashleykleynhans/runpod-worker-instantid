@@ -74,6 +74,20 @@ python3 download_checkpoints.py
 git clone https://huggingface.co/ashleykleynhans/FaceAnalysis models
 ```
 
+## Upgrading
+
+1. Activate the venv and pull the latest code:
+```bash
+source /workspace/venv/bin/activate
+cd /workspace/runpod-worker-instantid
+git pull
+```
+2. Upgrade the dependencies:
+```bash
+cd src
+pip3 install --upgrade --upgrade-strategy eager -r requirements.txt
+```
+
 ## Building the Docker Image
 
 You can either build this Docker image yourself, your alternatively,
