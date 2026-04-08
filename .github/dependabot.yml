@@ -5,9 +5,6 @@ updates:
     schedule:
       interval: "weekly"
     ignore:
-      # Ignore all pre-release/RC versions
-      - dependency-name: "*"
-        update-types: ["version-update:semver-pre-release"]
       # Avoid major version bumps that break backward compatibility
       - dependency-name: "diffusers"
         update-types: ["version-update:semver-major"]
