@@ -7,7 +7,7 @@ onnxruntime-gpu; sys_platform != 'darwin'
 onnxruntime; sys_platform == 'darwin'
 omegaconf
 peft>=0.19.1,<1.0
-huggingface-hub>=0.30.0,<1.0
+huggingface-hub>=0.36.2,<1.0
 opencv-python
 insightface==0.7.3
 runpod
