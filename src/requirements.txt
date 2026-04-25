@@ -1,6 +1,6 @@
 diffusers>=0.37.1,<1.0
 transformers>=4.57.6,<5.0
-accelerate>=0.34.0,<1.0
+accelerate>=0.34.2,<1.0
 safetensors
 einops
 onnxruntime-gpu; sys_platform != 'darwin'
