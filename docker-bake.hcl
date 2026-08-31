@@ -1,9 +1,9 @@
 variable "REGISTRY" {
-    default = "docker.io"
+    default = "ghcr.io"
 }
 
 variable "REGISTRY_USER" {
-    default = "ashleykza"
+    default = "ashleykleynhans"
 }
 
 variable "APP" {

@@ -5,6 +5,9 @@ on:
     workflows: [Tests]
     types: [completed]
     branches: [main]
+  push:
+    tags:
+      - '*'
   workflow_dispatch:
 
 jobs:
@@ -150,7 +153,9 @@ jobs:
           echo "Starting build..."
 
           # Build both targets
-          docker buildx bake -f docker-bake.hcl -f docker-bake.override.hcl --push default network-volume
+          # Attestations (SBOM and provenance) are attached so consumers can
+          # verify image contents and build provenance
+          docker buildx bake -f docker-bake.hcl -f docker-bake.override.hcl --provenance=mode=max --sbom=true --push default network-volume
 
           echo "Build completed!"
 
