@@ -1,13 +1,13 @@
 diffusers>=0.40.0,<1.0
 transformers>=5.16.1,<6.0
-accelerate>=0.34.2,<1.0
-safetensors
-einops
-onnxruntime-gpu; sys_platform != 'darwin'
-onnxruntime; sys_platform == 'darwin'
-omegaconf
+accelerate>=1.15.0,<2.0
+safetensors>=0.8.0
+einops>=0.8.2
+onnxruntime-gpu>=1.29.0; sys_platform != 'darwin'
+onnxruntime>=1.29.0; sys_platform == 'darwin'
+omegaconf>=2.3.1
 peft>=0.20.0,<1.0
-huggingface-hub>=1.29.0,<2.0
-opencv-python
-insightface==0.7.3
-runpod
+huggingface-hub>=1.30.0,<2.0
+opencv-python>=5.0.0.93
+insightface>=2.0
+runpod>=1.12.0

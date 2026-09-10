@@ -24,3 +24,11 @@ updates:
         update-types: ["version-update:semver-major"]
       - dependency-name: "huggingface-hub"
         update-types: ["version-update:semver-major"]
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
