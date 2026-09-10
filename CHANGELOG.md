@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.4.4] - 2026-09-10
 
 ### Changed
-- Bumped Python dependencies to latest: accelerate 1.15.0, safetensors 0.8.0, einops 0.8.2, onnxruntime 1.29.0, omegaconf 2.3.1, huggingface-hub 1.30.0, opencv-python 5.0.0.93, insightface 2.0, runpod 1.12.0, numpy 2.5.3, Pillow 12.3.0, requests 2.34.2, pytest 9.1.1, pytest-cov 7.1.0
+- Bumped Python dependencies to latest: accelerate 1.15.0, safetensors 0.8.0, einops 0.8.2, onnxruntime 1.29.0, omegaconf 2.3.1, huggingface-hub 1.30.0, opencv-python 5.0.0.93, insightface 2.0, runpod 1.12.0, numpy 2.4.6, Pillow 12.3.0, requests 2.34.2, pytest 9.1.1, pytest-cov 7.1.0
 - Kept CUDA 12.4 for Runpod compatibility
 - Pinned GitHub Actions to major versions only
 - Added Dependabot tracking for github-actions and docker ecosystems
