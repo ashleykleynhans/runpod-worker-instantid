@@ -4,7 +4,7 @@ accelerate>=1.15.0,<2.0
 safetensors>=0.8.0
 einops>=0.8.2
 onnxruntime-gpu>=1.29.0; sys_platform != 'darwin'
-onnxruntime>=1.29.0; sys_platform == 'darwin'
+onnxruntime>=1.30.0; sys_platform == 'darwin'
 omegaconf>=2.3.1
 peft>=0.20.0,<1.0
 huggingface-hub>=1.30.0,<2.0
