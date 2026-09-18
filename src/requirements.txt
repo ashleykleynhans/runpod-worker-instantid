@@ -7,7 +7,7 @@ onnxruntime-gpu>=1.29.0; sys_platform != 'darwin'
 onnxruntime>=1.29.0; sys_platform == 'darwin'
 omegaconf>=2.3.1
 peft>=0.20.0,<1.0
-huggingface-hub>=1.30.0,<2.0
+huggingface-hub>=1.31.0,<2.0
 opencv-python>=5.0.0.93
 insightface>=2.0
 runpod>=1.12.0
