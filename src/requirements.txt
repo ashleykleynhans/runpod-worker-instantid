@@ -1,5 +1,5 @@
 diffusers>=0.40.0,<1.0
-transformers>=5.16.1,<6.0
+transformers>=5.17.0,<6.0
 accelerate>=1.15.0,<2.0
 safetensors>=0.8.0
 einops>=0.8.2
